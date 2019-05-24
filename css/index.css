@@ -1,0 +1,150 @@
+body{
+    font-size: 18px;
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+}
+header{
+    background-color: #ff6f00;
+    box-shadow: 2px 2px #bdbdbd;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+}
+h1{
+    color:#ffffff;
+    margin: 0;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 50%;
+}
+nav a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 0;
+}
+nav a:hover{
+    color: #424242;
+    border-bottom: 1px dashed #424242;
+}
+.banner img{
+    width: 100%;
+    height: 100hv;
+}
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    width: 100wv;
+}
+.imgcuad{
+    width: 50%;
+}
+.imgcuad img{
+    width: 100%;
+}
+article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    padding: 0 50px;
+}
+article p{
+    text-align: justify;
+}
+article h2, .grayrow h2{
+    color: #ff6f00;
+    text-align: center;
+    width: 100%;
+    border-bottom: 1px solid #ffa000;
+}
+.grayrow{
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+.grayrow ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.reverse{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100wv;
+}
+.grayrow div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 20px;
+}
+input, textarea{
+    font-size: 18px;
+    width: 40%;
+    margin-bottom: 10px;
+    border: 1px solid #ffa000;
+}
+button{
+    font-size: 18px;
+    height: 45px;
+    width: 20%;
+    background-color: #ffa000;
+    border: 1px solid #ffa000;
+    color: #ffffff;
+    cursor: pointer;
+}
+button:hover{
+    border-color: #ffa000;
+    background-color: #f5f5f5;
+    color:#ffa000;
+}
+footer{
+    background-color: #ffe082;
+    text-align: center;
+    padding: 30px 0;
+}
+
+
+
+@media screen and (max-width:768px){
+    header{
+        flex-direction: column;
+    }
+    nav{
+        width: 100%;
+    }
+    .contenedor, .reverse{
+        flex-direction: column-reverse;
+    }
+    article{
+        padding: 0;
+        width: 100%;
+        margin: 0 10px;
+    }
+    article p, article h2{
+        width: 95%;
+    }
+    .imgcuad{
+        width: 100%;
+    }
+}
+@media screen and (max-width:480px){
+    .grayrow ul{
+        flex-flow: wrap;
+    }
+    .grayrow ul li{
+        width: 50%;
+    }
+    input, textarea, button{
+        width: 80%;
+    }
+}
